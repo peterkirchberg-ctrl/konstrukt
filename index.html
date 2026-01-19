@@ -1,29 +1,26 @@
-<!DOCTYPE html><html lang="de">
+
+<!DOCTYPE html>
+<html lang="de">
 <head>
-<meta charset="utf-8">
-<title>Konstrukt</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  padding: 40px;
-  background: #ffffff;
-  color: #000000;
-  font-family: monospace;
-  line-height: 1.5;
-}
-</style>
+  <meta charset="utf-8">
+  <title>Konstrukt</title>
 </head>
-<body><pre>
-EXISTS S
-EXISTS P : S -> S
-NOT EXISTS P^-1
-P(S) = S
-NOT EXISTS D_ij : P_i -> P_j
-FOR ALL x IN S : w(x)
-FOR ALL pi SUBSET P : pi(S) SUBSET S
-FOR ALL pi != pi' : NOT EXISTS f : pi(S) -> pi'(S)
-EXISTS UNIQUE S
-</pre></body>
-  
+<body>
+
+<pre>
+A0: exists S
+
+A1: exists P : S -> S
+
+A2: not exists P^{-1}
+
+A3: P(S) = S
+
+A4: not exists D_ij : P_i -> P_j
+
+A5: S = (Z, R, w)
+</pre>
+
+</body>
 </html>
+
